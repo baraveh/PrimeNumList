@@ -1,5 +1,3 @@
-package Prime;
-
 public class Node<T> {
 		private T _value;
 		private Node<T> _next;
