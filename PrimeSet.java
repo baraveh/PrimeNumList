@@ -19,7 +19,7 @@ public class PrimeSet {
 	}
 
 	/**
-	 * Checks whether PrimeSet is empty. Time = O(1) Memory= O(1)
+	 * Checks whether a PrimeSet is empty. Time = O(1) Memory= O(1)
 	 * 
 	 * @return true if PrimeSet is empty, else false.
 	 */
@@ -79,11 +79,11 @@ public class PrimeSet {
 	}
 
 	/**
-	 * Checks whether a PrimeSet is a subSet of another. Time = O(n) Memory
+	 * Checks whether a PrimeSet is a subset of another. Time = O(n) Memory
 	 * = O(1)
 	 * 
 	 * @param other
-	 *            The subSet to check.
+	 *            The subset to check.
 	 * @return True if other is subset of PrimeSet, else false.
 	 */
 	public boolean subSet(PrimeSet other) {
@@ -117,7 +117,7 @@ public class PrimeSet {
 	 * Adds a number (only if it is prime) to the list. Time = O(n) Memory = O(1).
 	 * 
 	 * @param x
-	 *            The T to add.
+	 *            The integer to add.
 	 */
 	public void addToPrimeSet(int x) {
 		if (isPrime(x)) {
@@ -161,10 +161,10 @@ public class PrimeSet {
 	}
 
 	/**
-	 * Removes an T from the PrimeSet. Time = O(n) Memory = O(1)
+	 * Removes an integer from the PrimeSet. Time = O(n) Memory = O(1)
 	 * 
 	 * @param x
-	 *            The T to remove.
+	 *            The integer to remove.
 	 */
 	public void removeFromPrimeSet(int x) {
 		if (isPrime(x) && !this.isEmpty()) {
@@ -288,7 +288,7 @@ public class PrimeSet {
 	 * 
 	 * @param other
 	 *            The PrimeSet to check the difference with.
-	 * @return A PrimeSet of all elements that are in PrimeSet only.
+	 * @return A PrimeSet of all elements that are only in PrimeSet.
 	 */
 	public PrimeSet difference(PrimeSet other) {
 		// Creates an identical PrimeSet to object PrimeSet and removes all
@@ -317,6 +317,8 @@ public class PrimeSet {
 
 	private static boolean isPrime(int x){
 		
+		if(x==1||x==0)
+			return false;
 		for(int i = (int) Math.sqrt((double) x); i > 1; i= i-2){
 			if (x%i == 0)
 				return false;
