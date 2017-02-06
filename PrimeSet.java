@@ -1,5 +1,3 @@
-package Prime;
-
 /**
  * this class represents lists of prime numbers. Requires Node class.
  * 
