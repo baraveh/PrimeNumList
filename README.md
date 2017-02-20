@@ -1,3 +1,3 @@
 # PrimeNumList
-An exercise in lists an prime numbers.
-Contanins basic node class, the PrimeSet class and Javadoc documentaion.
+An exercise in java lists and prime numbers.
+<br/>Contanins basic node class, the PrimeSet class and Javadoc documentaion.
